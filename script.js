@@ -19,10 +19,14 @@ addTaskBtn.addEventListener("click", ()=>{
     addTask();
 });
 
-// Feature to Mark Task as Checked
+
+// Feature to Mark Task as Checked and delete Task
 displayTask.addEventListener("click", (e)=>{
     if(e.target.type === "checkbox") {
         const label = e.target.nextElementSibling;
         label.classList.toggle("checkedList");
     }
-}, false);
+    if(e.target.className === "cross") {
+        e.target.parentElement.remove();
+    }
+});
