@@ -67,6 +67,7 @@ main #displayTaskListContainer ul li{
     margin: 0.5rem 0;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 main #displayTaskListContainer ul li .todoCheck{
@@ -77,6 +78,7 @@ main #displayTaskListContainer ul li .todoCheck{
 
 main #displayTaskListContainer ul li .todoTask{
     flex: 10;
+    cursor: pointer;
 }
 
 main #displayTaskListContainer ul li .cross{
